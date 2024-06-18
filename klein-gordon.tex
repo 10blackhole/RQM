@@ -98,7 +98,7 @@ Restando \eqref{1.psi} de \eqref{1.psi*}, es direto ver que
   \implies \nabla_\m \underbrace{(\psi^*\nabla^\m \psi-\psi\nabla^\m \psi^*)}_{\sim j^\m }=0
 \end{equation}
 Definimos la cuadri-corriente como
-\begin{equation}
+\begin{equation}\label{1.26}
   j_\m \equiv\frac{i\hbar}{2m_0}(\psi^*\nabla^\m \psi-\psi\nabla^\m \psi^*)
 \end{equation}
 donde agregamos el factor delante para que la componente $j_0$ tenga unidades de probabilidad de densidad (es decir, 1/cm$^3$). Además, esto nos asegura obtener el límite no-relaivista correcto. En particular, \eqref{1.25} queda
@@ -130,6 +130,64 @@ es decir, separamos la dependencia del tiempo de $\psi$ en dor términos, uno co
 \begin{equation}
   E'=E-m_0c^2
 \end{equation}
+y remarquemos que la energía $E'$ es no-relativista, lo que significa que $E'\ll m_0c^2$. De aquí,
+\begin{equation}
+  E'\varphi\ll m_0c^2\varphi\implies \left|i\hbar\pdv{\varphi}{t}\right|\ll m_0c^2\varphi
+\end{equation}
+Calculemos $\pdv*[2]{\psi}{t}$:
+\begin{align}
+  \pdv{\psi}{t}&=\pdv{\varphi}{t}e^{-\frac{i}{\hbar}m_0c^2t}-\frac{i m_0c^2}{\hbar}\varphi e^{-\frac{i}{\hbar}m_0c^2t}\\
+  &=\left(\pdv{\varphi}{t}-\frac{i m_0c^2}{\hbar}\varphi\right)e^{-\frac{i}{\hbar}m_0c^2t}\\
+  &\approx -\frac{i}{\hbar}m_0c^2\varphi e^{-\frac{i}{\hbar}m_0c^2t}
+\end{align}
+\begin{align}
+  \pdv[2]{\psi}{t}&=\pdv{t}\left(\pdv{\varphi}{t}-\frac{i m_0c^2}{\hbar}\varphi\right)e^{-\frac{i}{\hbar}m_0c^2t}\\
+  &\approx\left(-\frac{i}{\hbar}m_0c^2\varphi-\frac{i}{\hbar}m_0c^2\varphi\right)e^{-\frac{i}{\hbar}m_0c^2t}\\
+  &\approx \left(-2\frac{i}{\hbar}m_0c^2\varphi\right)e^{-\frac{i}{\hbar}m_0c^2t}\\
+  &=-\frac{2i m_0c^2}{\hbar}\pdv{\varphi}{t}e^{-\frac{i}{\hbar}m_0c^2t}-\frac{i}{\hbar^2}m_0^2c^4\varphi e^{-\frac{i}{\hbar}m_0c^2t}\\
+  &=-\left[\frac{2im_0c^2}{\hbar}\pdv{\varphi}{t}+\frac{m_0^2c^4}{\hbar^2}\varphi\right]e^{-\frac{i}{\hbar}m_0c^2t}
+\end{align}
+Reemplazando en la ecuación de Klein-Gordon
+\begin{equation}
+  \hat{p}^\m \hat{p}_\m \psi=m_0c^2c^2\psi\implies \left(\Box+\frac{m_0^2c^2}{\hbar{^2}}\right)\psi=0
+\end{equation}
+lo cual se puede reescribir como
+\begin{equation}
+  \left(\frac{1}{c^2}\pdv[2]{t}-\pdv[2]{x}-\pdv[2]{y}-\pdv[2]{z}\right)\psi=0
+\end{equation}
+se tiene
+\begin{align}
+  -\frac{1}{c^2}\left[i\frac{2m_0c^2}{\hbar}\pdv{\varphi}{t}+\frac{m_0^2c^4}{\hbar^2}\varphi\right]e^{-\frac{i}{\hbar}m_0c^2t}&=\left(\pdv[2]{x}+\pdv[2]{y}+\pdv[2]{z}-\frac{m_0^2c^2}{\hbar^2}\right)\varphi e^{-\frac{i}{\hbar}m_0c^2t}\\
+  -\frac{2im_0}{\hbar}\pdv{\varphi}{t}e^{-\frac{i}{\hbar}m_0c^2t}-\frac{m_0^2c^2}{\hbar^2}\varphi e^{-\frac{i}{\hbar}m_0c^2t}&=\nabla^2\varphi e^{-\frac{i}{\hbar}m_0c^2t}-\frac{m_0^2c^2}{\hbar^2}\varphi e^{-\frac{i}{\hbar}m_0c^2t}\\
+  -\frac{2im_0}{\hbar}\pdv{\varphi}{t}e^{-\frac{i}{\hbar}m_0c^2t}&=\nabla^2\varphi e^{-\frac{i}{\hbar}m_0c^2t}
+\end{align}
+Multiplicando ambos lados por $-\hbar^2/(2m_0)$, obtenemos finalmente
+\begin{equation}
+\boxed{  i\hbar \pdv{\varphi}{t}=-\frac{\hbar^2}{2m_0}\nabla^2\varphi}
+\end{equation}
+la ecuación de Schrödinger libre para partículas sin spin. Dado que el tipo de partículas descrito por una ecuación de onda no depende de si la partícula es relativista o no-relativista, inferimos que \textit{la ecuación de Klein-Gordon describe partículas con spin-$0$}.
+
+\subsection{Partículas libres de spin-$0$}
+Anteriormente hemos remarcado que en una teoría relativista,\textit{ el concepto de una partícula libre es una idealización}. Es más, partículas de spin-$0$, como piones o kaones, interactúan fuertemente con otras partículas y campos. Sin embargo, podemos descubrir algunos de los métodos prácticos para lidiar con esos problemas, estudiando las soluciones libres de \eqref{1.21}. Volvamos a la interpretación de la densidad de corriente \eqref{1.26} que habíamos descartado debido a que $\rho$ en \eqref{1.29} no era definida positiva. Además, encontramos que, siguiendo el procedimiento usual
+\begin{equation}
+  \int_V\rho\dd^3x=\rm constante
+\end{equation}
+La pregunta es cómo se debe interpretar $\rho$ y $\vec{j}$. La interpretación de probabilidad está descartada por lo discutido anteriormente en el contexto de \eqref{1.29}. Sin embargo, tenemos la siguiente alternativa: Obtenemos \textit{la cuadri-corriente densidad de carga} multiplicando la densidad de corriente \eqref{1.26} con la carga elemental $e$, resultando
+\begin{align}
+  j_\m '\equiv j_\m e=\frac{i e\hbar}{2m_0}(\psi^*\nabla^\m \psi-\psi\nabla^\m \psi^*)=(c\rho',-\vec{j}')
+\end{align}
+donde
+\begin{align}
+ \label{1.35} \rho'&=\frac{i\hbar e}{2m_0c^2}\left(\psi^*\pdv{\psi}{t}-\psi\pdv{\psi^*}{t}\right)\\
+  \vec{j}'&=-\frac{i\hbar e}{2m_0}(\psi^*\nabla \psi-\psi\nabla\psi^*)\label{1.36}
+\end{align}
+denotan la \textit{densidad de carga} y la \textit{densidad de corriente de carga}, respectivamente. La densidad de carga \eqref{1.35} puede ser positiva, negativa o cero. Esto equivale a la existencia de partículas y antipartículas en la teoría. Calculando las \textit{soluciones para partículas libres}, podemos entender esto mejor.
+
+
+
+
+
+
 
 
 
