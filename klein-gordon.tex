@@ -64,8 +64,83 @@ Así, podemos escribir \eqref{1.21} como
 \end{equation}
 Podemos verificar inmediatamente que covaiancia de Lorentz de la ecuación de Klein-Gordon, dado que $ \hat{p}^\m \hat{p}_\m$ es invariante de Lorentz. Notemos también que \eqref{1.22} es la ecuación de onda clásica incluyendo el \textit{término de masa} $m_0^2c^2/\hbar^2$. Soluciones libres son de la forma
 \begin{equation}
-  \psi=\exp\left(-i\hbar p_\m x^\m \right)=\exp\left[-\frac{i}{\hbar}\left(p_0x^0-\vec{p}\cdot\vec{x}\right)\right]=\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}-Et)\right]
+  \psi=\exp\left(-\frac{i}{\hbar} p_\m x^\m \right)=\exp\left[-\frac{i}{\hbar}\left(p_0x^0-\vec{p}\cdot\vec{x}\right)\right]=\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}-Et)\right]
 \end{equation}
+En efecto, de \eqref{1.22},
+\begin{align}
+  \Box\psi+\frac{m_0^2c^2}{\hbar^2}\psi&=\partial^\m\partial_\m e^{-\frac{i}{\hbar}p_\m x^\m }+\frac{m_0^2c^2}{\hbar^2}e^{-\frac{i}{\hbar}p_\m x^\m }\\
+  &=\partial^\m \left[-\frac{i}{\hbar}p_\m e^{-\frac{i}{\hbar}p_\m x^\m }\right]+\frac{m_0^2c^2}{\hbar^2}e^{-\frac{i}{\hbar}p_\m x^\m }\\
+  &=-\frac{1}{\hbar^2}p_\m p^\m e^{-\frac{i}{\hbar}p_\m x^\m }+\frac{m_0^2c^2}{\hbar^2}e^{-\frac{i}{\hbar}p_\m x^\m }\\
+  &=0\qquad \checkmark
+\end{align}
+bajo la condición $p^\m p_\m =m_0^2c^2$ lo que resuta en
+\begin{equation}\label{1.24}
+  E=\pm \sqrt{m_0c^2+\vec{p}^2}
+\end{equation}
+
+
+
+Así, existe solución tanto para energías positivas como para energías negativas \footnote{Las soluciones con eneergía negativa están físicamente conectadas con antipartículas. Dado que estas pueden ser observadas en la naturalez, hemos obtenido una indicación del valor del extender la teoría no-relativista.}.
+
+Ahora constrimos la cuadri-corriente $j_\m $ conectada con \eqref{1.21}. En analogía con nuestas consideraciones para el caso de la ecuación de Schrödinger, esperamos una ley de conservación para $j_\m $. Empezamos de \eqref{1.22}, en la forma
+\begin{equation}\label{1.psi*}
+  (\hat{p}_\m  \hat{p}^\m -m_0^2c^2)\psi=0\quad /\psi^* \cdot
+\end{equation}
+y tomamos el comlejo conjugado
+\begin{equation}\label{1.psi}
+  (\hat{p}_\m  \hat{p}^\m -m_0^2c^2)\psi^*=0\quad /\psi\cdot
+\end{equation}
+Restando \eqref{1.psi} de \eqref{1.psi*}, es direto ver que
+\begin{equation}
+  \psi^*\nabla_\m \nabla^\m \psi-\psi\nabla_\m \nabla^\m \psi^*=0
+\end{equation}\label{1.25}
+\begin{equation}
+  \implies \nabla_\m \underbrace{(\psi^*\nabla^\m \psi-\psi\nabla^\m \psi^*)}_{\sim j^\m }=0
+\end{equation}
+Definimos la cuadri-corriente como
+\begin{equation}
+  j_\m \equiv\frac{i\hbar}{2m_0}(\psi^*\nabla^\m \psi-\psi\nabla^\m \psi^*)
+\end{equation}
+donde agregamos el factor delante para que la componente $j_0$ tenga unidades de probabilidad de densidad (es decir, 1/cm$^3$). Además, esto nos asegura obtener el límite no-relaivista correcto. En particular, \eqref{1.25} queda
+\begin{align*}
+  \nabla_\m j^\m &=\pdv{(ct)}\left[\frac{i\hbar}{2m_0}\left(\psi^*\pdv{(ct)}\psi-\psi\pdv{(ct)}\psi^*\right)\right]-\nabla\left[\frac{i\hbar}{2m_0}\left(\psi^*\pdv{(ct)}\psi-\psi\pdv{(ct)}\psi^*\right)\right]\\
+  &=\pdv{t}\left[\frac{i\hbar}{2m_0c^2}\left(\psi^*\pdv{t}\psi-\psi\pdv{t}\psi^*\right)\right]-\nabla\left[\frac{i\hbar}{2m_0}\left(\psi^*\pdv{(ct)}\psi-\psi\pdv{(ct)}\psi^*\right)\right]\\
+  &=\pdv{\rho}{t}+\nabla\cdot\vec{j}\\
+  &=0
+\end{align*}
+es decir, posee la forma de una ecuación de continuidad. Como es usual, integramos sobre todo el espacio,
+\begin{equation}
+  \int_V\pdv{\rho}{t}\dd^3x=\pdv{t}\int_V\rho\dd^3x=-\int_V\nabla\cdot\vec{j}\dd^3x=-\int_{S}\vec{j}\cdot \dd \vec{S}=0
+\end{equation}
+\begin{equation}
+  \implies \int_V\rho\dd^3x=\rm constante
+\end{equation}\label{1.29}
+De esta manera, es natural interpretar
+\begin{equation}
+  \rho =\frac{i\hbar}{2m_0c^2}\left(\psi^*\pdv{t}\psi-\psi\pdv{t}\psi^*\right)
+\end{equation}
+como una densidad de probabilidad. Sin embargo, hay un problema con esta interpretación: Para un tiempo dado $t$, tanto $\psi$ como $\pdv*{\psi}{t}$ pueden tener valores arbitrarios; luego, $\rho\xt $ en \eqref{1.29} puede ser tanto positiva como negativa, de manera que $\rho\xt $ no está definida positiva y no puede ser considerada una densidad de probabilidad. La razón profunda de esto es que la ecuación de Klein-Gordon es de segundo orden en el tiempo, de manera que debemos conoceer tanto $\psi$ como $\pdv*{\psi\xt }{t}$ para un dado $t$. Además, existen soluciones para energía negativa [ver \eqref{1.24}]. Esto, sumado con la dificultad de la interpretación de la probabilidad fue la razón por la que tanto tiempo se consideró a la ecuación de Klein-Gordon como sin sentido físico. Por lo tanto se intentó buscar una ecuación de onda relativista que fuese de primer orden en el tiempo con densidad de probabilidad definida positiva, la cual fue finalmente descubiera por Dirac. Sin embargo, dicha ecuación sigue teniendo soluciones con energía negativa, las cuales están conectadas con la existencia de antipartículas.
+
+\subsection{El límite no-relativista}
+Podemos estudiar el límite no-relativista de la ecuación de Klein-Gordon \eqref{1.21}. Para ello, consideremos el siguiente ansatz
+\begin{equation}
+  \psi\rt =\varphi\rt e^{-\frac{i}{\hbar}m_0c^2t}
+\end{equation}
+es decir, separamos la dependencia del tiempo de $\psi$ en dor términos, uno conteniendo la masa en reposo. En el límite no-relativista la diferencia entre la energía total $E$ de la partícula y su masa en reposo $m_0c^2$ es pequeña. Así, definimos
+\begin{equation}
+  E'=E-m_0c^2
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
