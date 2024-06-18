@@ -1,0 +1,106 @@
+\section{Ecuación de onda relativista para partículas de spin-$0$. Ecuación de Klein-Gordon}
+
+La descripción de un fenómeno a altas energías requiere la investigación de ecuaciones de ondas relativistas, es decir, \textit{ecuaciones que sean invariantes de Lorentz}. La transición desde una descripción no-relativista hacia una relativista implica que varios conceptos de la teoría no-relativista deben ser reinvestigados, en particular:
+\begin{enumerate}
+	\item Coordenadas espaciales y temporales tienen que ser tratadas por igual en la teoría.
+	\item Dado que
+	\begin{equation}
+  \Delta x\sim \frac{\hbar}{\Delta p}\sim \frac{\hbar }{m_0c},
+\end{equation}
+una partícula relativista no puede ser localizada con más precisión que $\approx \hbar/m_0c$; de otro modo podría ocurrir creación de pares de partículas debido a $E>2m_0c^2$. Así, la idea de partícula libre solo hace sentido si la partícula no está confinada por vínculos externos a un volúmen menor que aproximadamente la \textit{longitud de onda de Compton} $\lambda_{ c}=\hbar/m_0c $. De otro modo, la partícula automáticamente tiene compañeros debido a la reación de partícula-antipartícula.
+\item Si la posición de la partícula es incierta, e.d., si
+\begin{equation}
+  \Delta x>\frac{\hbar }{m_0c},
+\end{equation}
+entonces el tiempo es tambien incierto, debido a
+\begin{equation}
+  \Delta t\sim \frac{\Delta x}{c}>\frac{\hbar}{m_0c^2}.
+\end{equation}
+En una teoría no-relativista $\Delta t$ puede ser arbitrariamente pequeño, porque $c\to \infty$. De este modo, necesitamos la necesidad de reconsiderar el concepto de densidad de probabilidad
+\begin{equation}
+  \rho(x,y,z,t),
+\end{equation}
+el cual describe la probabilidad de encontrar una partícula en un lugar definido $\vec{r}$ a un tiempo fijo $t$.
+\item A altas energías (relativista) ocurre creación y aniquilación de pares, usualmente en la forma de creación de pares de partícula-antipartícula. Así, a energías relativistas, la conservación de partículas no es más un supuesto válido. Una teoría relativista debe ser capáz de describir creación de pares, polarización del vacio, conversión de partículas, etc. 
+\end{enumerate}
+
+\subsection{La ecuación de Klein-Gordon}
+De la mecánica cuántica sabemos que la ecuación de Schrödinger
+\begin{equation}
+  i\hbar \pdv{\psi}{t}=\left[-\frac{\hbar^2}{2m_0}\nabla^2+V(\vec{x})\right]\psi\xt 
+\end{equation}
+corresponde a la relación de energía no-relativista en forma de operador,
+\begin{equation}
+  \hat{E}=\frac{\hat{\vec{p}}^2}{2m_0}+V(\vec{x}),\quad \rm donde
+\end{equation}
+\begin{equation}
+  \hat{E}=i\hbar\pdv{t},\qquad \hat{\vec{p}}=-i\hbar\nabla
+\end{equation}
+son los operadores de energía y momentum respectivamente. Con el fin de obtener una ecuación de onda relativista, comencemos considernado partículas libres con la relación relativista
+\begin{equation}
+  p^\m p_\m =\frac{E^2}{c^2}-\vec{p}\cdot\vec{p}=m_0^2c^2.
+\end{equation}
+Reemplazamos el 4-momentum $p^\m $ por el operador 4-momentum
+\begin{align}
+  \hat{p}^\m =i\hbar\pdv{x_\m }&=i\hbar\left(\pdv{(ct)},\pdv{x_1},\pdv{x_2},\pdv{x_3}\right)\\
+  &=i\hbar\left(\pdv{(ct)},-\pdv{x},-\pdv{y},-\pdv{z}\right)\\
+  &=i\hbar\left(\pdv{(ct)},-\nabla\right)\\
+  &=(\hat{p}_0,\hat{\vec{p}})
+\end{align}
+Así, obtenemos la \textbf{ecuación de Klein-Gordon} para partículas libres,
+\begin{equation}\label{1.21}
+  \boxed{\hat{p}^\m \hat{p}_\m \psi=m_0^2c^2\psi}
+\end{equation}
+Aquí $m_0$ es la masa en reposo de la partícula y $c$ es la velocidad de la luz en el vacío. Notemos que
+\begin{align}
+  \hat{p}^\m \hat{p}_\m&=\left[i\hbar\left(\pdv{(ct)},-\nabla\right)\right]\left[i\hbar\left(\pdv{(ct)},\nabla\right)\right]\\
+  &=-\hbar^2\left[\pdv{(ct)},-\nabla\right]\left[\pdv{(ct)},\nabla\right]\\
+  &=-\hbar^2\left(\frac{1}{c^2}\pdv[2]{t},-\nabla^2\right)\\
+  &=-\hbar^2\Box
+\end{align}
+Así, podemos escribir \eqref{1.21} como
+\begin{equation}\label{1.22}
+  \left(\Box+\frac{m_0^2c^2}{\hbar^2}\right)\psi=0
+\end{equation}
+Podemos verificar inmediatamente que covaiancia de Lorentz de la ecuación de Klein-Gordon, dado que $ \hat{p}^\m \hat{p}_\m$ es invariante de Lorentz. Notemos también que \eqref{1.22} es la ecuación de onda clásica incluyendo el \textit{término de masa} $m_0^2c^2/\hbar^2$. Soluciones libres son de la forma
+\begin{equation}
+  \psi=\exp\left(-i\hbar p_\m x^\m \right)=\exp\left[-\frac{i}{\hbar}\left(p_0x^0-\vec{p}\cdot\vec{x}\right)\right]=\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}-Et)\right]
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
