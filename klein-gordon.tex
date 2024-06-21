@@ -7,7 +7,7 @@ La descripción de un fenómeno a altas energías requiere la investigación de 
 	\begin{equation}
   \Delta x\sim \frac{\hbar}{\Delta p}\sim \frac{\hbar }{m_0c},
 \end{equation}
-una partícula relativista no puede ser localizada con más precisión que $\approx \hbar/m_0c$; de otro modo podría ocurrir creación de pares de partículas debido a $E>2m_0c^2$. Así, la idea de partícula libre solo hace sentido si la partícula no está confinada por vínculos externos a un volúmen menor que aproximadamente la \textit{longitud de onda de Compton} $\lambda_{ c}=\hbar/m_0c $. De otro modo, la partícula automáticamente tiene compañeros debido a la reación de partícula-antipartícula.
+una partícula relativista no puede ser localizada con más precisión que $\approx \hbar/m_0c$; de otro modo podría ocurrir creación de pares de partículas debido a $E>2m_0c^2$. Así, la idea de partícula libre solo hace sentido si la partícula no está confinada por vínculos externos a un volÃºmen menor que aproximadamente la \textit{longitud de onda de Compton} $\lambda_{ c}=\hbar/m_0c $. De otro modo, la partícula automáticamente tiene compañeros debido a la reación de partícula-antipartícula.
 \item Si la posición de la partícula es incierta, e.d., si
 \begin{equation}
   \Delta x>\frac{\hbar }{m_0c},
@@ -25,7 +25,7 @@ el cual describe la probabilidad de encontrar una partícula en un lugar definid
 \end{enumerate}
 
 \subsection{La ecuación de Klein-Gordon}
-De la mecánica cuántica sabemos que la ecuación de Schrödinger
+De la mecánica cuántica sabemos que la ecuación de SchrÃ¶dinger
 \begin{equation}
   i\hbar \pdv{\psi}{t}=\left[-\frac{\hbar^2}{2m_0}\nabla^2+V(\vec{x})\right]\psi\xt 
 \end{equation}
@@ -63,7 +63,7 @@ Así, podemos escribir \eqref{1.21} como
   \left(\Box+\frac{m_0^2c^2}{\hbar^2}\right)\psi=0
 \end{equation}
 Podemos verificar inmediatamente que covaiancia de Lorentz de la ecuación de Klein-Gordon, dado que $ \hat{p}^\m \hat{p}_\m$ es invariante de Lorentz. Notemos también que \eqref{1.22} es la ecuación de onda clásica incluyendo el \textit{término de masa} $m_0^2c^2/\hbar^2$. Soluciones libres son de la forma
-\begin{equation}
+\begin{equation}\label{1.23}
   \psi=\exp\left(-\frac{i}{\hbar} p_\m x^\m \right)=\exp\left[-\frac{i}{\hbar}\left(p_0x^0-\vec{p}\cdot\vec{x}\right)\right]=\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}-Et)\right]
 \end{equation}
 En efecto, de \eqref{1.22},
@@ -82,7 +82,7 @@ bajo la condición $p^\m p_\m =m_0^2c^2$ lo que resuta en
 
 Así, existe solución tanto para energías positivas como para energías negativas \footnote{Las soluciones con eneergía negativa están físicamente conectadas con antipartículas. Dado que estas pueden ser observadas en la naturalez, hemos obtenido una indicación del valor del extender la teoría no-relativista.}.
 
-Ahora constrimos la cuadri-corriente $j_\m $ conectada con \eqref{1.21}. En analogía con nuestas consideraciones para el caso de la ecuación de Schrödinger, esperamos una ley de conservación para $j_\m $. Empezamos de \eqref{1.22}, en la forma
+Ahora constrimos la cuadri-corriente $j_\m $ conectada con \eqref{1.21}. En analogía con nuestas consideraciones para el caso de la ecuación de SchrÃ¶dinger, esperamos una ley de conservación para $j_\m $. Empezamos de \eqref{1.22}, en la forma
 \begin{equation}\label{1.psi*}
   (\hat{p}_\m  \hat{p}^\m -m_0^2c^2)\psi=0\quad /\psi^* \cdot
 \end{equation}
@@ -165,10 +165,10 @@ Multiplicando ambos lados por $-\hbar^2/(2m_0)$, obtenemos finalmente
 \begin{equation}
 \boxed{  i\hbar \pdv{\varphi}{t}=-\frac{\hbar^2}{2m_0}\nabla^2\varphi}
 \end{equation}
-la ecuación de Schrödinger libre para partículas sin spin. Dado que el tipo de partículas descrito por una ecuación de onda no depende de si la partícula es relativista o no-relativista, inferimos que \textit{la ecuación de Klein-Gordon describe partículas con spin-$0$}.
+la ecuación de SchrÃ¶dinger libre para partículas sin spin. Dado que el tipo de partículas descrito por una ecuación de onda no depende de si la partícula es relativista o no-relativista, inferimos que \textit{la ecuación de Klein-Gordon describe partículas con spin-$0$}.
 
 \subsection{Partículas libres de spin-$0$}
-Anteriormente hemos remarcado que en una teoría relativista,\textit{ el concepto de una partícula libre es una idealización}. Es más, partículas de spin-$0$, como piones o kaones, interactúan fuertemente con otras partículas y campos. Sin embargo, podemos descubrir algunos de los métodos prácticos para lidiar con esos problemas, estudiando las soluciones libres de \eqref{1.21}. Volvamos a la interpretación de la densidad de corriente \eqref{1.26} que habíamos descartado debido a que $\rho$ en \eqref{1.29} no era definida positiva. Además, encontramos que, siguiendo el procedimiento usual
+Anteriormente hemos remarcado que en una teoría relativista,\textit{ el concepto de una partícula libre es una idealización}. Es más, partículas de spin-$0$, como piones o kaones, interactÃºan fuertemente con otras partículas y campos. Sin embargo, podemos descubrir algunos de los métodos prácticos para lidiar con esos problemas, estudiando las soluciones libres de \eqref{1.21}. Volvamos a la interpretación de la densidad de corriente \eqref{1.26} que habíamos descartado debido a que $\rho$ en \eqref{1.29} no era definida positiva. Además, encontramos que, siguiendo el procedimiento usual
 \begin{equation}
   \int_V\rho\dd^3x=\rm constante
 \end{equation}
@@ -181,7 +181,91 @@ donde
  \label{1.35} \rho'&=\frac{i\hbar e}{2m_0c^2}\left(\psi^*\pdv{\psi}{t}-\psi\pdv{\psi^*}{t}\right)\\
   \vec{j}'&=-\frac{i\hbar e}{2m_0}(\psi^*\nabla \psi-\psi\nabla\psi^*)\label{1.36}
 \end{align}
-denotan la \textit{densidad de carga} y la \textit{densidad de corriente de carga}, respectivamente. La densidad de carga \eqref{1.35} puede ser positiva, negativa o cero. Esto equivale a la existencia de partículas y antipartículas en la teoría. Calculando las \textit{soluciones para partículas libres}, podemos entender esto mejor.
+denotan la \textit{densidad de carga} y la \textit{densidad de corriente de carga}, respectivamente. La densidad de carga \eqref{1.35} puede ser positiva, negativa o cero. Esto equivale a la existencia de partículas y antipartículas en la teoría. Calculando las \textit{soluciones para partículas libres}, podemos entender esto mejor. Consideremos la ecuación de Klein-Gordon \eqref{1.21}
+\begin{equation}
+  (\hat{p}^\m \hat{p}_\m -m_0^2c^2)\psi=0
+\end{equation}
+y el ansatz para ondas libres \eqref{1.23}
+\begin{equation}
+  \psi=Ae^{-\frac{i}{\hbar}p_\m x^\m }=Ae^{\frac{i}{\hbar}(\vec{p}\cdot\vec{x}-Et)}
+\end{equation}
+vimos que obtenemos como condición necesaria que
+\begin{equation}
+  p^\m p_\m -m_0^2c^2=0\implies E^2=c^2(\vec{p}^2+m_0^2c^2)
+\end{equation}
+Así, existen dos posibles soluciones para un momentum $\vec{p}$ dado: una con energía positiva y otra con energía negativa,
+\begin{equation}
+  E_p=\pm c\sqrt{\vec{p}^2+m_0^2c^2},\qquad \psi_{\pm }=A_{\pm }\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}\mp |E_p|t)\right]
+\end{equation}
+donde los $A_\pm$ son constantes de normalización que serán determinadas más adelante. Reemplazando en la ecuación para la densidad \eqref{1.35}, se tiene
+\begin{align}
+  \rho'&=\frac{i\hbar e}{2m_0c^2}\left[\psi^*(\mp |E|\psi_{\pm })\frac{i}{\hbar}-\psi\left((\mp |E|\psi^*_{\pm }\left(-\frac{i}{\hbar}\right)\right)\right]\\
+  &=\frac{e}{2m_0c^2}\left(\pm |E|\psi^*_{\pm}\psi_{\pm }\pm |E|\psi^*_\pm \psi_\pm \right)\\
+  &=\frac{e}{m_0c^2}\left(\pm |E|\psi^*_{\pm}\psi_{\pm }\pm |E|\psi^*_\pm \psi_\pm \right)
+\end{align}
+\begin{equation}\label{1.39}
+  \implies \boxed{\rho_\pm =\pm\frac{e|E_p|}{m_0c^2}\psi^*_\pm \psi_\pm }
+\end{equation}
+Esto sugiere la siguiente interpretración: $\psi_+$ especifica partículas con carga $+e$; $\psi_-$ especifica partículas con la misma masa, pero con carga $-e$. La solución de la ecuación de onda es siempre una combinación lineal de ambos tipos de funciones. Este punto puede aclararse aún más discretizando las ondas planas continuas \eqref{1.23}. Para ello, confinemos las ondas en una caja de lados $L$. Como es constumbre, imponemos condiciones de borde periódicas en las paredes de la caja. Esto nos lleva a la conocida ecuación
+\begin{equation}
+  \psi_{n(\pm )}=A_{n(\pm )}\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}\mp |E_p|t)\right]
+\end{equation}
+donde
+\begin{equation}
+  \vec{p}_n=\frac{2\p }{L},\quad \vec{n}=\{n_x,n_y,n_z\},\quad n_i\in\mathbb{N}
+\end{equation}
+y
+\begin{equation}
+  E_{p_n}=c\sqrt{p_n^2+m_0^2c^2}\equiv E_n
+\end{equation}
+
+Usando \eqref{1.39} podemos determinar los factores de normalización $A_{\pm }$, pidiendo que
+\begin{equation}
+  \pm e=\int_{L^3}\dd^3x\rho_\pm =\pm \frac{e E_{p_n}}{m_0c^2}|A_{n(\pm )}|^2L^3
+\end{equation}
+\begin{equation}
+  \implies A_{n(\pm )}=\sqrt{\frac{m_0c^2}{L^3E_{p_n}}}
+\end{equation}
+Luego,
+\begin{equation}\label{1.43}
+  \psi_{n(\pm )}=\sqrt{\frac{m_0c^2}{L^3E_{p_n}}}\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}\mp |E_p|t)\right]
+\end{equation}
+Notemos que la normalización para amas soluciones es la misma. La única diferencia es el factor relativo delante de $E_{p_n}t$ en la exponencial. Las soluciones más generales de la ecuación de Klein-Gordon para partículas positivas y negativas de spin-$0$ entonces quedan
+\begin{equation}
+  \psi_+=\sum_na_n\psi_{n(+)}=\sum_na_n\sqrt{\frac{m_0c^2}{L^3E_{p_n}}}\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}- E_nt)\right]
+\end{equation}
+\begin{equation}
+  \psi_-=\sum_nb_n\psi_{n(-)}=\sum_nb_n\sqrt{\frac{m_0c^2}{L^3E_{p_n}}}\exp\left[\frac{i}{\hbar}(\vec{p}\cdot\vec{x}+ E_nt)\right]
+\end{equation}
+respectivamente. Soluciones para partículas de spin-$0$ con carga nula pueden también ser construidas. Notemos que de la densidad de carga \eqref{1.35}, \textit{el campo de Klein-Gordon $\psi$ tiene que ser real para partículas neutras}, es decir,
+\begin{equation}
+  \psi=\psi^*
+\end{equation}
+Por medio de \eqref{1.43} podemos describir fácilmete un frente de onda para una partícula neutra:
+\begin{align}
+  \psi_{n(0)}&=\frac{1}{\sqrt{2}}\left(\psi^n_{(+)}(\vec{p}_n)+\psi^n_{(-)}(-\vec{p}_n)\right)\\
+  &=\sqrt{\frac{m_0c^2}{2L^3E_n}}\left\{\exp\left[\frac{i}{\hbar}(\vec{p}_n\cdot\vec{x}-E_nt)\right]+\exp\left[\frac{i}{\hbar}(-\vec{p}_n\cdot\vec{x}+E_nt)\right]\right\}\\
+  &=\sqrt{\frac{m_0c^2}{2L^3E_n}}\left\{\exp\left[\frac{i}{\hbar}(\vec{p}_n\cdot\vec{x}-E_nt)\right]+\exp\left[-\frac{i}{\hbar}(\vec{p}_n\cdot\vec{x}-E_nt)\right]\right\}\\
+  &=\sqrt{\frac{m_0c^2}{2L^3E_n}}2\cos\left(\frac{\vec{p}_n\cdot\vec{x}-E_nt}{\hbar}\right)
+\end{align}
+Notemos que satisface $\psi^n_{(0)}=\psi^{n*}_{(0)}$, luego, de \eqref{1.35} se tiene que $\rho'=0$.
+
+Además, notemos que la densidad de corriente $\vec{j}'\xt $ para partículas neutras \eqref{1.36} se anula también, de manera que en este caso no hay una ley de conservación. Obviamente la teoría cuántica relativista necesariamente conduce a nuevos grados de libertad, esto es, los \textit{grados de libertad de carga} de partículas. En una teoría libre no-relativista, las partículas si spin pueden propagarse libremente con un momentum bien definido $\vec{p}$. En el caso de relativista de una partícula libre y sin spin, \textit{existen tres soluciones, las cuales corresponden a la carga eléctricad e la partículas ($+,-,0$) para cada momentum $\vec{p}$.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
